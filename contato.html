@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato - Carlos Picimilio</title>
+<meta name="description" content="Peça um orçamento de site.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <h2 class="logo">Carlos Picimilio</h2>
+    <button id="btn-menu" aria-label="Abrir menu">&#9776;</button>
+  </div>
+  <nav id="menu" aria-label="Menu principal">
+    <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="curriculo.html">Currículo</a></li>
+<li><a href="github.html">GitHub</a></li>
+<li><a href="servicos.html">Serviços</a></li>
+<li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section>
+  <h1>Contato</h1>
+  <p>Preencha o formulário para pedir um orçamento. Veja antes os <a href="servicos.html">preços</a>.</p>
+  <p id="sucesso" class="sucesso" hidden>Obrigado pelo contato! Sua solicitação foi registrada. Entrarei em contato para entender melhor o projeto e enviar uma proposta.</p>
+  <div id="erros" class="erros"></div>
+  <form id="formulario">
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <label for="tel">Telefone:</label>
+    <input type="tel" id="tel" placeholder="(27) 99999-9999">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" placeholder="voce@email.com">
+    <label for="cliente">Tipo de cliente:</label>
+    <select id="cliente"><option value="">Selecione</option><option>Pessoa Física</option><option>Pessoa Jurídica</option></select>
+    <label for="horario">Melhor horário para contato:</label>
+    <select id="horario"><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Noite</option></select>
+    <label for="servico">Tipo de serviço:</label>
+    <select id="servico"><option value="">Selecione</option><option>Landing Page</option><option>Site institucional</option><option>Loja virtual</option><option>Site para restaurante</option><option>Site para academia</option><option>Site para empresa</option><option>Sistema web</option><option>Outro</option></select>
+    <p>Tipo de projeto:</p>
+    <div><label><input type="radio" name="projeto" value="Novo site"> Novo site</label> <label><input type="radio" name="projeto" value="Reformulação"> Reformulação</label> <label><input type="radio" name="projeto" value="Manutenção"> Manutenção</label> </div>
+    <p>Recursos desejados:</p>
+    <div><label><input type="checkbox" name="recursos"> Formulário</label> <label><input type="checkbox" name="recursos"> Galeria de imagens</label> <label><input type="checkbox" name="recursos"> Vídeo</label> <label><input type="checkbox" name="recursos"> Áudio</label> <label><input type="checkbox" name="recursos"> Animações</label> <label><input type="checkbox" name="recursos"> Banco de dados</label> <label><input type="checkbox" name="recursos"> Login</label> <label><input type="checkbox" name="recursos"> Área administrativa</label> </div>
+    <label for="orcamento">Orçamento disponível:</label>
+    <select id="orcamento"><option value="">Selecione</option><option>Até R$ 300</option><option>R$ 300 a R$ 600</option><option>R$ 600 a R$ 1.000</option><option>Acima de R$ 1.000</option></select>
+    <label for="data">Data desejada para entrega:</label>
+    <input type="date" id="data">
+    <label for="urgencia">Urgência (1 a 5): <span id="valor">3</span></label>
+    <input type="range" id="urgencia" min="1" max="5" value="3">
+    <label for="descricao">Breve descrição do projeto:</label>
+    <textarea id="descricao" rows="5" placeholder="Conte o que você precisa"></textarea>
+    <label><input type="checkbox" id="termos"> Aceito os termos</label>
+    <br><br>
+    <input class="botao" type="submit" value="Enviar">
+    <input class="botao cinza" type="reset" value="Limpar">
+  </form>
+  <p><a href="index.html">Voltar para a Home</a></p>
+</section>
+</main>
+
+<footer>
+  <p><strong>Carlos Picimilio</strong><br>Estudante de Ciência da Computação</p>
+  <p><a href="index.html">Home</a> | <a href="curriculo.html">Currículo</a> | <a href="github.html">GitHub</a> | <a href="servicos.html">Serviços</a> | <a href="contato.html">Contato</a></p>
+
+  <p>&copy; <span id="ano">2026</span> Carlos Picimilio — Todos os direitos reservados.</p>
+</footer>
+
+<button id="btn-topo" aria-label="Voltar ao topo">&uarr; Topo</button>
+<script src="js/script.js"></script>
+</body>
+</html>
